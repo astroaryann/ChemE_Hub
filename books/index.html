@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - ChemEHub</title>
+    <meta name="description" content="Find and download free technical and industry reports for chemical engineering.">
+    <meta name="keywords" content="Chemical Engineering Reports, Technical Documents, ChemEHub">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="/index.html" class="logo">ChemEHub</a>
+                <ul class="nav-menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/books/">Books</a></li>
+                    <li><a href="/reports/">Reports</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/ppts/">PPTs</a></li>
+                    <li><a href="/softwares/">Softwares</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="resource-page">
+        <div class="container">
+            <h1>Technical & Industry Reports</h1>
+            <p>Access insightful reports and technical documents from various engineering fields.</p>
+
+            <div class="search-filter-bar">
+                <input type="text" id="searchInput" placeholder="Search for reports...">
+            </div>
+
+            <div id="resource-grid" class="resource-grid">
+                <p>Loading resources...</p>
+            </div>
+
+            <div id="pagination-controls" class="pagination"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" aria-label="GitHub"><img src="/assets/icons/github.svg" alt="GitHub"></a>
+                <a href="mailto:contact@chemehub.com" aria-label="Email"><img src="/assets/icons/email.svg" alt="Email"></a>
+            </div>
+            <p>&copy; 2025 ChemEHub. All Rights Reserved.</p>
+            <p class="disclaimer">All resources are provided for educational purposes only. Please support the original authors and publishers.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/data/reports.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initializePage(reports); 
+        });
+    </script>
+</body>
+</html>
